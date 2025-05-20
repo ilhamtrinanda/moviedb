@@ -16,7 +16,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ $movie->title }}</h5>
                                 <p class="card-text">{{ Str::words($movie->synopsis, 20, '...') }}</p>
-                                <a href="#" class="btn btn-success">Read More</a>
+                                <a href="/movie/{{ $movie->id }}/{{ $movie->slug }}" class="btn btn-success">Read
+                                    More</a>
                             </div>
                         </div>
                     </div>
