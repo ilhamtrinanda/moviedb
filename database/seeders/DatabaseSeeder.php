@@ -15,9 +15,10 @@ class DatabaseSeeder extends Seeder
 
     public function run():void
     {
+        User::factory(3)->create();
         // $this->call(CategorySeeder::class);
         // $this->call(MovieSeeder::class);
-        $this->call(CategorySeeder::class);
-        Movie::factory(50)->create();
+        // $this->call(CategorySeeder::class);
+        // Movie::factory(50)->create();
     }
 }
