@@ -2,6 +2,7 @@
 
 @section('content')
     <h1>Input New Movie</h1>
+    <a href="/data-movie" class="btn btn-success mb-4">Data Movie</a>
     <form action="/movie" method="POST" enctype="multipart/form-data">
         @csrf
         {{-- judul --}}
